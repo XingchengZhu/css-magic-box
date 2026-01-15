@@ -1,46 +1,48 @@
 import { useState } from 'react';
 import Glassmorphism from './generators/Glassmorphism';
 import Neumorphism from './generators/Neumorphism';
-import { Layers, Box, Github } from 'lucide-react';
+import { Layers, Box, Github, Wand2 } from 'lucide-react';
 
 function App() {
   const [activeTab, setActiveTab] = useState('glass');
 
   return (
-    <div className="min-h-screen bg-[#0f172a] text-slate-200 p-4 md:p-8 font-sans selection:bg-blue-500/30">
+    <div className="min-h-screen bg-[#0f172a] text-slate-200 font-sans selection:bg-blue-500/30 flex flex-col">
       
-      {/* 顶部导航 */}
-      <header className="max-w-7xl mx-auto mb-10 flex items-center justify-between py-4 border-b border-slate-800/50">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/20">
-            <Box className="text-white" size={24} />
+      {/* 🟢 顶部导航栏 */}
+      <header className="border-b border-slate-800/60 bg-[#0f172a]/80 backdrop-blur-md sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 h-16 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="w-8 h-8 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center shadow-lg shadow-blue-500/20">
+              <Wand2 className="text-white" size={18} />
+            </div>
+            <div>
+              <h1 className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400 leading-none">
+                CSS Magic Box
+              </h1>
+            </div>
           </div>
-          <div>
-            <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400">
-              CSS Magic Box
-            </h1>
-            <p className="text-xs text-slate-500 font-mono tracking-wider">GENERATOR_COLLECTION_V1</p>
-          </div>
+          <a 
+            href="https://github.com/yourusername/css-magic-box" 
+            target="_blank"
+            className="flex items-center gap-2 px-3 py-1.5 bg-slate-800/50 hover:bg-slate-800 rounded-full transition-all border border-slate-700 hover:border-slate-600 group"
+          >
+            <Github size={16} className="text-slate-400 group-hover:text-white transition-colors"/>
+            <span className="text-xs font-medium text-slate-300 group-hover:text-white hidden sm:block">Star on GitHub</span>
+          </a>
         </div>
-        <a 
-          href="https://github.com/yourusername/css-magic-box" 
-          target="_blank"
-          className="flex items-center gap-2 px-4 py-2 bg-slate-800/50 hover:bg-slate-800 rounded-full transition-all border border-slate-700 hover:border-slate-600 group"
-        >
-          <Github size={18} className="text-slate-400 group-hover:text-white transition-colors"/>
-          <span className="text-sm font-medium text-slate-300 group-hover:text-white">Star on GitHub</span>
-        </a>
       </header>
       
-      <main className="max-w-7xl mx-auto">
-        {/* Tab 切换栏 */}
-        <div className="flex gap-2 mb-8 overflow-x-auto pb-2">
+      <main className="flex-1 max-w-7xl mx-auto w-full p-4 md:p-8 flex flex-col">
+        
+        {/* 🟢 Tab 切换器 */}
+        <div className="flex flex-wrap gap-2 mb-8">
           <button
             onClick={() => setActiveTab('glass')}
-            className={`flex items-center gap-2 px-6 py-3 rounded-xl font-medium transition-all duration-300 border ${
+            className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-medium transition-all duration-300 border ${
               activeTab === 'glass' 
-                ? 'bg-slate-800 border-blue-500/50 text-blue-400 shadow-lg shadow-blue-900/10' 
-                : 'bg-transparent border-transparent text-slate-400 hover:bg-slate-800/50 hover:text-slate-200'
+                ? 'bg-slate-800 border-cyan-500/50 text-cyan-400 shadow-lg shadow-cyan-900/20' 
+                : 'bg-transparent border-transparent text-slate-500 hover:bg-slate-800/50 hover:text-slate-300'
             }`}
           >
             <Layers size={18} />
@@ -49,10 +51,10 @@ function App() {
           
           <button
             onClick={() => setActiveTab('neumorphism')}
-            className={`flex items-center gap-2 px-6 py-3 rounded-xl font-medium transition-all duration-300 border ${
+            className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-medium transition-all duration-300 border ${
               activeTab === 'neumorphism' 
-                ? 'bg-slate-800 border-purple-500/50 text-purple-400 shadow-lg shadow-purple-900/10' 
-                : 'bg-transparent border-transparent text-slate-400 hover:bg-slate-800/50 hover:text-slate-200'
+                ? 'bg-slate-800 border-blue-500/50 text-blue-400 shadow-lg shadow-blue-900/20' 
+                : 'bg-transparent border-transparent text-slate-500 hover:bg-slate-800/50 hover:text-slate-300'
             }`}
           >
             <Box size={18} />
@@ -60,14 +62,16 @@ function App() {
           </button>
         </div>
 
-        {/* 内容区域 (添加简单的淡入动画效果) */}
-        <div className="animate-in fade-in zoom-in-95 duration-300">
-          {activeTab === 'glass' ? <Glassmorphism /> : <Neumorphism />}
+        {/* 🟢 内容区域 */}
+        <div className="flex-1">
+          {activeTab === 'glass' && <Glassmorphism />}
+          {activeTab === 'neumorphism' && <Neumorphism />}
         </div>
+
       </main>
 
       {/* 简单的页脚 */}
-      <footer className="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-800/50 text-center text-slate-500 text-sm">
+      <footer className="py-6 border-t border-slate-800/50 text-center text-slate-600 text-sm">
         <p>Designed for Developers · Open Source under MIT License</p>
       </footer>
     </div>
