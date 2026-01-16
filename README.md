@@ -20,8 +20,6 @@
 
 ---
 
-![Main App Screenshot](./public/screenshot.png)
-
 ## ✨ Introduction (简介)
 
 **CSS Magic Box** is a developer-first tool designed to generate complex, trendy CSS effects instantly. Stop struggling with `box-shadow` calculations or `border-radius` values—visualize your design and get the production-ready code in one click.
@@ -34,19 +32,19 @@ We currently provide 4 powerful generators:
 
 ### 1. 🔮 Glassmorphism (毛玻璃)
 Create the trendy frosted glass effect with adjustable blur, transparency, and saturation.
-> ![Glassmorphism Preview](https://via.placeholder.com/800x400?text=Place+Glassmorphism+Screenshot+Here)
+> ![Glassmorphism Preview](./public/f1.png){ width=600 }
 
 ### 2. 🖱️ Neumorphism (新拟态)
 Generate Soft UI elements with realistic light and dark shadows. Supports Flat, Pressed, Convex, and Concave shapes.
-> ![Neumorphism Preview](https://via.placeholder.com/800x400?text=Place+Neumorphism+Screenshot+Here)
+> ![Neumorphism Preview](./public/f2.png){ width=600 }
 
 ### 3. 🧬 Fancy Border (流动边框)
 Design organic, blob-like shapes using 8-point `border-radius` values. Great for profile avatars and hero sections.
-> ![Fancy Border Preview](https://via.placeholder.com/800x400?text=Place+Fancy+Border+Screenshot+Here)
+> ![Fancy Border Preview](./public/f3.png){ width=600 }
 
 ### 4. 🌫️ Smooth Shadows (平滑阴影)
 Automatically layer multiple shadows to create a hyper-realistic depth effect (similar to Vercel/Stripe style), far superior to a single box-shadow.
-> ![Smooth Shadows Preview](https://via.placeholder.com/800x400?text=Place+Smooth+Shadows+Screenshot+Here)
+> ![Smooth Shadows Preview](./public/f4.png){ width=600 }
 
 ## 🛠️ Tech Stack (技术栈)
 
@@ -77,15 +75,6 @@ Make sure you have [Node.js](https://nodejs.org/) installed.
 
 4.  Open `http://localhost:5173` in your browser.
 
-## 🤝 Contributing (贡献)
-
-Contributions are always welcome! Feel free to fork this repository and submit a Pull Request.
-
-1.  Fork the Project
-2.  Create your Feature Branch (`git checkout -zb feature/AmazingFeature`)
-3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4.  Push to the Branch (`git push origin feature/AmazingFeature`)
-5.  Open a Pull Request
 
 ## 📄 License
 
