@@ -32,19 +32,19 @@ We currently provide 4 powerful generators:
 
 ### 1. 🔮 Glassmorphism (毛玻璃)
 Create the trendy frosted glass effect with adjustable blur, transparency, and saturation.
-![Glassmorphism Preview](./public/f1.png){ width=600 }
+![Glassmorphism Preview](./public/f1.png)
 
 ### 2. 🖱️ Neumorphism (新拟态)
 Generate Soft UI elements with realistic light and dark shadows. Supports Flat, Pressed, Convex, and Concave shapes.
-![Neumorphism Preview](./public/f2.png){ width=600 }
+![Neumorphism Preview](./public/f2.png)
 
 ### 3. 🧬 Fancy Border (流动边框)
 Design organic, blob-like shapes using 8-point `border-radius` values. Great for profile avatars and hero sections.
-![Fancy Border Preview](./public/f3.png){ width=600 }
+![Fancy Border Preview](./public/f3.png)
 
 ### 4. 🌫️ Smooth Shadows (平滑阴影)
 Automatically layer multiple shadows to create a hyper-realistic depth effect (similar to Vercel/Stripe style), far superior to a single box-shadow
-![Smooth Shadows Preview](./public/f4.png){ width=600 }
+![Smooth Shadows Preview](./public/f4.png)
 
 ## 🛠️ Tech Stack (技术栈)
 
