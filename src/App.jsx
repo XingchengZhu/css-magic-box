@@ -33,7 +33,7 @@ function App() {
             </div>
           </div>
           <a 
-            href="https://github.com/yourusername/css-magic-box" 
+            href="https://github.com/xingchengzhu/css-magic-box" 
             target="_blank"
             className="flex items-center gap-2 px-3 py-1.5 bg-slate-800/50 hover:bg-slate-800 rounded-full transition-all border border-slate-700 hover:border-slate-600 group"
           >

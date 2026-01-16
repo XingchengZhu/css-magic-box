@@ -2,9 +2,9 @@
 
   # 🎨 CSS Magic Box
 
-  **A collection of aesthetic CSS generators for modern web design.**
+  **The Ultimate CSS Generator Collection for Modern Web Design.**
   <br>
-  **为现代 Web 设计打造的唯美 CSS 生成器集合**
+  **现代 Web 设计的终极 CSS 生成器集合**
 
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
   ![React](https://img.shields.io/badge/Made%20with-React%2019-61DAFB.svg?style=flat&logo=react)
@@ -13,30 +13,40 @@
 
   <br>
 
-  [**xr-arrow-right: Live Demo / 在线体验**](https://css-magic-box.vercel.app/)
+  [**🚀 Live Demo / 在线体验**](https://css-magic-box.vercel.app)
   
   <br>
 </div>
 
 ---
 
-![App Screenshot](./public/screenshot.png)
+![Main App Screenshot](./public/screenshot.png)
 
 ## ✨ Introduction (简介)
 
-**CSS Magic Box** is a developer-friendly tool designed to generate complex CSS effects instantly. Stop writing repetitive CSS by hand—visualize your design and get the code in one click.
+**CSS Magic Box** is a developer-first tool designed to generate complex, trendy CSS effects instantly. Stop struggling with `box-shadow` calculations or `border-radius` values—visualize your design and get the production-ready code in one click.
 
-**CSS Magic Box** 是一个对开发者友好的工具，旨在瞬间生成复杂的 CSS 效果。停止手写重复的 CSS 代码——可视化你的设计，一键获取代码。
+**CSS Magic Box** 是一款专为开发者设计的工具，旨在瞬间生成复杂且时髦的 CSS 效果。停止纠结于复杂的阴影计算或圆角数值——可视化你的设计，一键获取生产级代码。
 
-Current generators include:
-- **🔮 Glassmorphism (毛玻璃)**: Customize blur, transparency, and saturation.
+## 🚀 Generators (功能列表)
 
-## 🚀 Features (功能亮点)
+We currently provide 4 powerful generators:
 
-* **Real-time Preview (实时预览)**: See changes instantly as you tweak the sliders.
-* **One-click Copy (一键复制)**: Get production-ready CSS code immediately.
-* **Modern UI (现代界面)**: Built with a dark-themed, clean interface for focus.
-* **Highly Customizable (高度定制)**: Control every aspect of the effect (Blur, Opacity, Saturation, etc.).
+### 1. 🔮 Glassmorphism (毛玻璃)
+Create the trendy frosted glass effect with adjustable blur, transparency, and saturation.
+> ![Glassmorphism Preview](https://via.placeholder.com/800x400?text=Place+Glassmorphism+Screenshot+Here)
+
+### 2. 🖱️ Neumorphism (新拟态)
+Generate Soft UI elements with realistic light and dark shadows. Supports Flat, Pressed, Convex, and Concave shapes.
+> ![Neumorphism Preview](https://via.placeholder.com/800x400?text=Place+Neumorphism+Screenshot+Here)
+
+### 3. 🧬 Fancy Border (流动边框)
+Design organic, blob-like shapes using 8-point `border-radius` values. Great for profile avatars and hero sections.
+> ![Fancy Border Preview](https://via.placeholder.com/800x400?text=Place+Fancy+Border+Screenshot+Here)
+
+### 4. 🌫️ Smooth Shadows (平滑阴影)
+Automatically layer multiple shadows to create a hyper-realistic depth effect (similar to Vercel/Stripe style), far superior to a single box-shadow.
+> ![Smooth Shadows Preview](https://via.placeholder.com/800x400?text=Place+Smooth+Shadows+Screenshot+Here)
 
 ## 🛠️ Tech Stack (技术栈)
 
@@ -67,16 +77,15 @@ Make sure you have [Node.js](https://nodejs.org/) installed.
 
 4.  Open `http://localhost:5173` in your browser.
 
-## 🗺️ Roadmap (开发计划)
+## 🤝 Contributing (贡献)
 
-We are constantly adding new generators! Upcoming features:
+Contributions are always welcome! Feel free to fork this repository and submit a Pull Request.
 
-- [x] **Glassmorphism Generator** (Released)
-- [ ] **Neumorphism Generator** (Soft UI buttons & inputs)
-- [ ] **Fancy Border-Radius** (Organic shapes)
-- [ ] **Box-Shadow Layering** (Smooth, multi-layer shadows)
-- [ ] **Gradient Text Generator**
-
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -zb feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
 
 ## 📄 License
 
@@ -85,5 +94,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by <a href="https://github.com/xingchengzhu">Xingcheng Zhu</a></sub>
+  <sub>Built with ❤️ by <a href="https://github.com/xingchengzhu">Your Name</a></sub>
 </div>
